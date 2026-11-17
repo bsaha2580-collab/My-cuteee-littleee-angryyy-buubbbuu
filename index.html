@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="A tiny courtroom for a very important relationship case.">
+  <title>Operation MANAAO ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Operation Manaao home"><span class="brand-mark">♥</span><span>OPERATION <b>MANAAO</b></span></a>
+      <span class="case-tag">CASE NO. 2026 / LOVE</span>
+    </header>
+
+    <div class="progress-wrap" aria-label="Progress">
+      <div class="progress-track"><div id="progressBar" class="progress-fill"></div></div>
+      <span id="progressLabel">THE COURT IS NOW IN SESSION</span>
+    </div>
+
+    <section class="screen active" id="screen-welcome">
+      <div class="hero-art" aria-hidden="true">
+        <div class="spark s1">✦</div><div class="spark s2">♡</div>
+        <div class="court-stamp">THE<br>COURT<br>OF LOVE</div>
+        <div class="gavel">⚖️</div>
+        <div class="heart-float">♥</div>
+      </div>
+      <p class="eyebrow">SUPREME COURT OF RELATIONSHIP AFFAIRS</p>
+      <h1>Your Honour,<br><em>I plead guilty.</em></h1>
+      <p class="lead">A very serious case has been brought against one Biki Saha. The accused requests a few minutes to make things right.</p>
+      <div class="case-card">
+        <div><span class="muted-label">THE ACCUSED</span><strong>Biki Saha</strong></div>
+        <div><span class="muted-label">THE HONOURABLE JUDGE</span><strong>Navneeta 👑</strong></div>
+        <div><span class="muted-label">CURRENT STATUS</span><strong class="status">Under investigation</strong></div>
+      </div>
+      <button class="btn btn-primary" data-next="punishment">Enter the courtroom <span>→</span></button>
+      <p class="tiny-note">No actual lawyers, judges, or boyfriends were harmed in this production.</p>
+    </section>
+
+    <section class="screen" id="screen-punishment">
+      <p class="eyebrow">CHAPTER 01 · SENTENCING</p>
+      <h2>Choose your punishment.</h2>
+      <p class="lead">The court recognises your authority. Please select one (or as many as you like).</p>
+      <div class="choice-grid">
+        <button class="choice-card" data-punishment="slap" data-next="slap"><span class="choice-icon">👋</span><strong>Virtual slap</strong><small>One harmless digital thappad.</small><span class="choice-arrow">↗</span></button>
+        <button class="choice-card" data-punishment="jail" data-next="jail"><span class="choice-icon">🔒</span><strong>Emotional jail</strong><small>Lock the accused up for being silly.</small><span class="choice-arrow">↗</span></button>
+        <button class="choice-card" data-punishment="apology" data-next="apology"><span class="choice-icon">💌</span><strong>Read the apology</strong><small>Less drama, more honesty.</small><span class="choice-arrow">↗</span></button>
+        <button class="choice-card" data-punishment="verdict" data-next="verdict"><span class="choice-icon">⚖️</span><strong>Skip to verdict</strong><small>The judge is in charge.</small><span class="choice-arrow">↗</span></button>
+      </div>
+      <button class="btn btn-quiet" data-back="welcome">← Back</button>
+    </section>
+
+    <section class="screen" id="screen-slap">
+      <p class="eyebrow">CHAPTER 02 · DIGITAL JUSTICE</p>
+      <h2>The court permits<br><em>one virtual thappad.</em></h2>
+      <p class="lead">Tap the button. The accused has been advised not to resist. 😂</p>
+      <div class="slap-stage" id="slapStage">
+        <div class="impact" id="impact">POW!</div>
+        <div class="avatar" id="avatar"><span class="avatar-hair"></span><span class="avatar-face">😵‍💫</span><span class="avatar-name">BIKI</span></div>
+        <div class="slap-hand" id="slapHand">✋</div>
+        <div class="stage-caption" id="slapCaption">Awaiting the judge's decision…</div>
+      </div>
+      <div class="slap-count">VIRTUAL SLAPS DELIVERED <b id="slapCount">0</b></div>
+      <button class="btn btn-danger" id="slapButton">DELIVER DIGITAL THAPPAD 👋</button>
+      <p class="tiny-note">Purely cartoon physics. Zero real-world violence. Maximum dramatic sound effects (imaginary).</p>
+      <div class="button-row"><button class="btn btn-quiet" data-back="punishment">← Court menu</button><button class="btn btn-primary" data-next="feelings">Continue →</button></div>
+    </section>
+
+    <section class="screen" id="screen-jail">
+      <p class="eyebrow">CHAPTER 02 · CONFINEMENT</p>
+      <h2>The accused is<br><em>behind bars.</em></h2>
+      <div class="jail-box"><div class="jail-emoji">🥺</div><div class="bars"></div><strong>BIKI'S EMOTIONAL JAIL</strong><p>Charge: Being a certified nuisance.</p><span id="jailTimer">Sentence: pending judge's approval</span></div>
+      <p class="lead">The accused promises to reflect, listen, and stop acting like a confused potato.</p>
+      <button class="btn btn-primary" data-next="feelings">Hear the judge's statement →</button>
+      <button class="btn btn-quiet" data-back="punishment">← Court menu</button>
+    </section>
+
+    <section class="screen" id="screen-feelings">
+      <p class="eyebrow">CHAPTER 03 · THE JUDGE SPEAKS</p>
+      <h2>How are you <em>really feeling?</em></h2>
+      <p class="lead">No wrong answers. You don't have to make things okay immediately.</p>
+      <div class="feeling-list">
+        <button class="feeling" data-feeling="angry"><span>😤</span><span><b>I'm angry.</b><small>I need you to understand why.</small></span><i>→</i></button>
+        <button class="feeling" data-feeling="hurt"><span>🥺</span><span><b>I'm hurt.</b><small>What happened affected me.</small></span><i>→</i></button>
+        <button class="feeling" data-feeling="ignored"><span>😔</span><span><b>I felt ignored.</b><small>I needed your attention.</small></span><i>→</i></button>
+        <button class="feeling" data-feeling="space"><span>🌿</span><span><b>I need some space.</b><small>Please let me have a little time.</small></span><i>→</i></button>
+        <button class="feeling" data-feeling="listen"><span>💬</span><span><b>I just want you to listen.</b><small>No defensiveness, no interruptions.</small></span><i>→</i></button>
+      </div>
+      <p class="tiny-note" id="feelingAcknowledgement" aria-live="polite"></p>
+      <button class="btn btn-primary" data-next="apology">Continue to the apology →</button>
+      <button class="btn btn-quiet" data-back="punishment">← Court menu</button>
+    </section>
+
+    <section class="screen" id="screen-apology">
+      <p class="eyebrow">CHAPTER 04 · STATEMENT OF THE ACCUSED</p>
+      <h2>Jokes aside,<br><em>I'm listening.</em></h2>
+      <div class="letter">
+        <div class="letter-top"><span>♡ A NOTE FROM BIKI</span><span>17 NOV 2026</span></div>
+        <p>My Dear BABY</p>
+        <p>Me Biki Saha is heartfully accepting all the mistakes i did in the recent days, none of them should be taken lightly caused they hurt you. You cried for me, you felt unheard, when you were seeking emotional availability all i gave you tears, i should be punished, &amp; i am feeling it, your absense itself is a huge punishment for me. I cant undo what I did, but what i can do is to make a promise that i will more on myself &amp; will try to resolve all the complaints you have as soon as i arrive.</p>
+        <p>With a all dear heart for you my love you deserve all the happiness, smiles, &amp; probably a slap from me as well, but thats for later with something more additional.</p>
+        <p class="signature">LOVE YOU<br><b>Your Idiot BF<br>BIKI SAHA</b></p>
+      </div>
+      <p class="tiny-note">Edit this message in <code>script.js</code> or directly in <code>index.html</code> to make it sound more like you.</p>
+      <button class="btn btn-primary" data-next="verdict">Proceed to final verdict →</button>
+      <button class="btn btn-quiet" data-back="feelings">← Back</button>
+    </section>
+
+    <section class="screen" id="screen-verdict">
+      <p class="eyebrow">CHAPTER 05 · FINAL VERDICT</p>
+      <div class="verdict-seal">♥</div>
+      <h2>The court is<br><em>awaiting your verdict.</em></h2>
+      <p class="lead">Judge Navneeta, the final decision is entirely yours.</p>
+      <div class="verdict-list">
+        <button class="verdict" data-verdict="forgiven"><span>❤️</span><span><b>Guilty, but forgiven.</b><small>Probation with extra hugs.</small></span></button>
+        <button class="verdict" data-verdict="try"><span>🥲</span><span><b>Still angry. Try harder.</b><small>The accused accepts the challenge.</small></span></button>
+        <button class="verdict" data-verdict="space"><span>🌙</span><span><b>Case postponed.</b><small>I need some time, please.</small></span></button>
+        <button class="verdict" data-verdict="hug"><span>🫂</span><span><b>Hug required immediately.</b><small>Subject to availability and consent.</small></span></button>
+      </div>
+      <div id="verdictResult" class="result-box" aria-live="polite" hidden></div>
+      <button class="btn btn-quiet" data-back="apology">← Re-read apology</button>
+      <button class="btn btn-primary" data-next="message">Tell Biki something 💌</button>
+      <button class="btn btn-quiet" id="restartButton">Restart the case ↻</button>
+      <p class="tiny-note">Whatever the verdict, your feelings matter more than this little website. ❤️</p>
+    </section>
+
+    <section class="screen" id="screen-message">
+      <p class="eyebrow">A LITTLE SPACE JUST FOR YOU · PRIVATE NOTE</p>
+      <div class="message-art" aria-hidden="true">💌</div>
+      <h2>Anything you want<br><em>to tell me, BABY?</em></h2>
+      <p class="lead">You can write anything here — the things you couldn't say, what you need from me, or simply what's on your mind. I'll receive it as a message, not through this website.</p>
+      <label class="message-label" for="herMessage">YOUR MESSAGE TO BIKI</label>
+      <textarea id="herMessage" class="message-input" rows="7" maxlength="4000" placeholder="Dear Biki, there's something I want you to know..."></textarea>
+      <p class="message-hint">Nothing is sent or stored by this page. Choose how you'd like to share it below.</p>
+      <button class="btn btn-primary" id="shareButton">Share message… <span>↗</span></button>
+      <div class="share-options">
+        <button class="share-option" id="whatsappButton"><span>💚</span><b>WhatsApp</b></button>
+        <button class="share-option" id="copyMessageButton"><span>📋</span><b>Copy message</b></button>
+      </div>
+      <p id="shareStatus" class="share-status" role="status" aria-live="polite"></p>
+      <button class="btn btn-quiet" data-back="verdict">← Back to the verdict</button>
+      <p class="tiny-note">Send it directly to Biki on WhatsApp or choose any app from your phone's share menu. ❤️</p>
+    </section>
+
+    <div class="modal-backdrop" id="kissModal" hidden role="dialog" aria-modal="true" aria-labelledby="kissTitle">
+      <div class="modal-card">
+        <div class="modal-heart">💋</div>
+        <p class="eyebrow">A VERY IMPORTANT COURT ORDER</p>
+        <h2 id="kissTitle">One final condition, BABY.</h2>
+        <p class="modal-copy">The judge is invited to redeem <strong>10 kisses</strong> for the accused. Only if you want to, of course. ❤️</p>
+        <div class="kiss-counter"><span id="kissCount">0</span><small> / 10 kisses collected</small></div>
+        <div class="kiss-actions">
+          <button class="btn btn-primary" id="kissButton">Give a kiss 💋</button>
+          <button class="btn btn-quiet" id="kissLaterButton">Keep the kisses for later</button>
+        </div>
+        <p class="modal-footnote" id="kissMessage" aria-live="polite">No pressure, Your Honour. The court respects your decision.</p>
+      </div>
+    </div>
+    <footer class="footer"><span>MADE WITH ♥ BY THE ACCUSED</span><span>NO APPEALS WITHOUT HUGS</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
